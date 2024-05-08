@@ -25,7 +25,7 @@ from strings import get_string
 
 TheChampu = ["https://telegra.ph/file/fb9181859efb3c6a514d2.jpg", "https://telegra.ph/file/994ec4ecbe07c89fa398c.jpg", "https://telegra.ph/file/eca8a684f8ca5d6634c7a.jpg", "https://telegra.ph/file/c97eab3ee44c7fef1d7e4.jpg",]
 
-@app.on_message(filters.command(["start"]) & filters.private & ~BANNED_USERS)
+@app.on_message(filters.command(["mustart"]) & filters.private & ~BANNED_USERS)
 @LanguageStart
 async def start_pm(client, message: Message, _):
     await add_served_user(message.from_user.id)
